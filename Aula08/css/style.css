@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Creepster&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+body{
+    font-family: "DM Sans", sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;  /*Altura minima da pagia - vh - tamanho responsividade*/
+    box-sizing: border-box; /* caixa para formulario  */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+h1{
+    padding-top: 50px;
+    margin: 0;
+    text-align: center;
+    color: rgba(20, 20, 20, 0.603);
+    font-size: 100px;
+}
+h2{
+    padding-bottom: 50px;
+    margin: 0;
+    text-align: center;
+    color: rgba(2, 2, 2, 0.603);
+    font-size: 20px;
+}
+
+.campo{
+    display: flex;   /* Flexivel - ajuste */
+    flex-direction: column;  /* coluna */
+}
+
+.formulario {
+    background-color: antiquewhite;
+    border: 1px solid black;
+    padding: 50px 100px;
+    border-radius: 35px;
+    color: black;
+    flex-direction: column;
+    max-width: 600px;
+    
+}
+.botao{
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.button{
+    background-color: rgb(51, 6, 6);
+    color: aliceblue;
+    border: none;
+    padding: 20px 50px;
+    border-radius: 10px;
+    cursor: pointer; /* transforma o cursor do mouse em opção de clique */
+    font-size: 15px;
+}
+input{
+    padding: 10px 10px;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+select{
+    padding: 10px 10px;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+button:hover{
+    transition: backgrond-color 0.4s ease, color 0.4s ease, border 0.3s ease;
+    background-color: brown;
+    color: black;
+    
+}
+#imagem{
+    margin: 10px;
+    border: none;
+    cursor: pointer;
+}
+#imagem::file-selector-button{
+    margin-right:  10px;
+    padding: 5px 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: rgb(37, 141, 106);
+    color: aliceblue;
+}
